@@ -43,8 +43,8 @@ func lissajous(out io.Writer, params map[string][]string) {
 		delay   = 8     // delay between frames in 10ms units
 	)
 	if _, ok := params["cycles"]; ok {
-		c, err := strconv.Atoi(params["cycles"][0])
-		cycles = c
+		var err error
+		cycles, err = strconv.Atoi(params["cycles"][0])
 		if err != nil {
 			fmt.Fprintf(out, "invalid cycles")
 		}

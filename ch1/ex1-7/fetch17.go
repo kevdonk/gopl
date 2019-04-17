@@ -1,5 +1,8 @@
 // Fetch prints the content found at a URL
-
+/*
+Exercise1.7:Thefunctioncallio.Copy(dst,src)readsfromsrcandwritestodst. Useit instead of ioutil.ReadAll to copy the response
+body to os.Stdout without requiring a buffer large enough to hold the entire stream. Be sure to check the error result of io.Copy.
+*/
 package main
 
 import (
