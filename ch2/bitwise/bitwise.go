@@ -39,11 +39,24 @@ In the shift operations x<<n and x>>n, the n operand determines the number of bi
 Left shifts fill the vacated bits with zeros, as do right shifts of unsigned numbers, but right shifts of signed numbers fill the vacated bits with copies of the sign bit. For this reason, it is important to use unsigned arithmetic when you’re treating an integer as a bit pattern.
 */
 
+// see if ith bit is set
+// (x & 1<<i == 0)
+
+// set ith bit
+// x |= 1<<i
+// or
+// x &= ^(1<<i)
+
+// clear ith bit
+// x &= 1<<i
+
+// toggle ith bit
+// x ^= 1<<i
 
 // hex / octal
-o := 0666
-fmt.Printf("%d %[1]o %#[1]o\n", o) // "438 666 0666"
-x := int64(0xdeadbeef)
-fmt.Printf("%d %[1]x %#[1]x %#[1]X\n", x)
+// o := 0666
+// fmt.Printf("%d %[1]o %#[1]o\n", o) // "438 666 0666"
+// x := int64(0xdeadbeef)
+// fmt.Printf("%d %[1]x %#[1]x %#[1]X\n", x)
 // Output:
 // 3735928559 deadbeef 0xdeadbeef 0XDEADBEEF

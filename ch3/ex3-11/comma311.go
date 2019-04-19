@@ -1,3 +1,5 @@
+// Exercise 3.11: Enhance comma so that it deals correctly with floating-point numbers and an optional sign.
+
 // comma inserts commas in a non-negative decimal integer string.
 package main
 
