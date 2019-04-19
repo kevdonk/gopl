@@ -8,6 +8,8 @@ comparison in ex1-3
 
 comparison in 2-3, 2-4, 2-5
 
+(curiousity: compare performance of 2 approaches to ex3-12)
+
 SKIPPED for now:
 ex 3-5 to 3-9 which are on coloring fractals and building a web server to display them
 
