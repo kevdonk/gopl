@@ -1,0 +1,2 @@
+// Exercise 4.9: Write a program wordfreq to report the frequency of each word in an input text file.
+// Callinput.Split(bufio.ScanWords)beforethefirstcalltoScantobreaktheinputinto words instead of lines.
